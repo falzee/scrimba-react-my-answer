@@ -1,0 +1,51 @@
+
+body{
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #f1f4c6;
+  background-image: url("./images/logohalf.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right 75%;
+}
+.Container{
+  display : flex;
+  background-color: #d6d0b8;
+  margin: 0;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.Title,.SubTitle{
+  margin: 0;
+  color: #837d7d;
+  }
+.Title {
+  margin-right: auto;
+  font-size: 30px;
+}
+.SubTitle{
+  font-weight: 700;
+  font-size: 20px;
+}
+.Rlogo{
+  width: 50px;
+  margin-right: 10px;
+}
+.MainContainer{
+  margin: 50px 30px;
+  color: #837d7d;
+  
+    
+}
+.MainTitle{
+  margin-bottom: 30px;
+}
+.MainList>li{
+  line-height: 19px;
+  padding-block: 10px;
+}
+.MainList>li::marker {
+  font-size: 1.5rem;
+  
+}
