@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #014e7d;
+  /*#5ec0fa #0B2434*/
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+/*- Style the <main> and <Die> components 
+ *   to look like they do in the slide
+ *      - Hints: Create a container to hold the 10 instances
+ *        of the Die component, and use CSS Grid to lay them
+ *        out evenly in 2 rows of 5 columns
+ *      - Use flexbox on main to center the dice container
+ *        in the center of the page */
+main {
+  background-color: #F5F5F5;
+  height: 400px;
+  max-width: 900px;
+  border-radius: 5px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5vw 10vw;
+  /*top right bottom left*/
+  
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.sub-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+
+}
+
+.grid-item {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.button-dice {
+  display: flex;
+  column-gap: 20px;
+}
+.roll-dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+}
+.reset-dice {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.reset-dice:focus {
+  outline: none;
+}
+
+.reset-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
